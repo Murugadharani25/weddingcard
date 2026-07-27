@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ivory-50 text-ink-900 font-body;
+}
+
+/* Storefront components */
+.btn-primary {
+  @apply bg-wine-500 hover:bg-wine-600 text-ivory-50 font-semibold px-5 py-2.5 rounded-md transition-colors;
+}
+
+.btn-gold {
+  @apply bg-gold-400 hover:bg-gold-500 text-ink-900 font-semibold px-5 py-2.5 rounded-md transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-ivory-100 text-ink-900 font-medium px-5 py-2.5 rounded-md border border-ink-900/15 transition-colors;
+}
+
+.btn-danger {
+  @apply bg-wine-600 hover:bg-wine-700 text-ivory-50 font-semibold px-5 py-2.5 rounded-md transition-colors;
+}
+
+.card-storefront {
+  @apply bg-white border border-ink-900/10 rounded-lg shadow-sm;
+}
+
+.input {
+  @apply bg-white border border-ink-900/20 rounded-md px-3 py-2 text-ink-900 placeholder:text-ink-500 focus:outline-none focus:ring-2 focus:ring-gold-400;
+}
+
+.label {
+  @apply text-xs uppercase tracking-wide text-ink-500 font-medium;
+}
+
+.gold-rule {
+  @apply w-14 h-[3px] bg-gold-400 rounded-full;
+}
+
+/* Admin components — deliberately cooler and more functional */
+.admin-shell {
+  @apply bg-slate-950 text-ivory-50;
+}
+
+.card-admin {
+  @apply bg-slate-900 border border-slate-700 rounded-lg;
+}
+
+.btn-admin-primary {
+  @apply bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold px-4 py-2 rounded-md transition-colors;
+}
+
+.btn-admin-secondary {
+  @apply bg-slate-800 hover:bg-slate-700 text-ivory-50 font-medium px-4 py-2 rounded-md border border-slate-600 transition-colors;
+}
+
+.input-admin {
+  @apply bg-slate-800 border border-slate-600 rounded-md px-3 py-2 text-ivory-50 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400;
+}
+
+.label-admin {
+  @apply text-xs uppercase tracking-wide text-slate-400 font-medium;
+}
+
+.mono {
+  @apply font-mono;
+}
